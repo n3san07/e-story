@@ -1,0 +1,101 @@
+@media screen and (max-width: 650px) {
+  .nav {
+    display: none !important;
+  }
+  #hero h1:nth-child(1) {
+    font-size: 40px !important;
+  }
+  #hero h1:nth-child(2) {
+    text-align: center;
+    min-width: 90vw !important;
+  }
+  .allPricing {
+    flex-wrap: wrap !important ;
+  }
+  footer a img {
+    max-width: 35px;
+  }
+  .logo img {
+    padding: 5px 15px !important;
+    width: 120px !important;
+  }
+  .fram2 img {
+    width: 50px !important;
+  }
+  .incart img {
+    width: 80px !important;
+    height: 70px !important;
+  }
+  .incart {
+    font-size: 12px !important;
+  }
+  #remove {
+    padding: 5px !important;
+  }
+  #cart {
+    width: 95% !important;
+  }
+  .togleMenu {
+    display: block !important;
+  }
+  #prodects {
+    padding: 20px 0px !important;
+    height: 100vh;
+  }
+  #top img{
+    width: 40px !important;
+    height: 40px !important;
+   
+  
+  }
+}
+
+@keyframes hamburger_puls {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+#togleMenu {
+  animation: hamburger_puls 1.2s ease infinite;
+  margin-right: 20px;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(27, 27, 27);
+  z-index: 10;
+  scroll-behavior: auto;
+  display: none;
+}
+.navMenu {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navMenu a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.2s ease;
+  font-size: 20px;
+}
+.navMenu a:hover {
+  margin-left: 50px;
+  color: rgba(173, 22, 71, 0.9);
+}
+
+/*------------------------------------*/
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
